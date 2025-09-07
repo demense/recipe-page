@@ -1,32 +1,50 @@
 @font-face {
-    font-family: "Outfit";
-    src: url(../assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+  font-family: "Outfit";
+  src: url(../assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
 }
 @font-face {
-    font-family: "Young-serif";
-    src: url(../assets/fonts/young-serif/YoungSerif-Regular.ttf);
+  font-family: "Young-serif";
+  src: url(../assets/fonts/young-serif/YoungSerif-Regular.ttf);
 }
 :root {
-    --Stone-100: hsl(30, 54%, 90%);
-    --Stone-600: hsl(30, 10%, 34%);
-    --Stone-900: hsl(24, 5%, 18%);
-   --Stone-150: hsl(30, 18%, 87%);
-    --Brown-800: hsl(14, 45%, 36%);
-    --Rose-800: hsl(332, 51%, 32%);
-    --Rose-50: hsl(330, 100%, 98%);
-    --paragraph: 1rem;
+  --Stone-100: hsl(30, 54%, 90%);
+  --Stone-600: hsl(30, 10%, 34%);
+  --Stone-900: hsl(24, 5%, 18%);
+  --Stone-150: hsl(30, 18%, 87%);
+  --Brown-800: hsl(14, 45%, 36%);
+  --Rose-800: hsl(332, 51%, 32%);
+  --Rose-50: hsl(330, 100%, 98%);
+  --paragraph: 1rem;
 }
-html, body {
-    height: 100%;
+html,
+body {
+  height: 100%;
 }
 body {
-    background-color: var(--Stone-100);
-    font-family: "Outfit", sans-serif, monospace;
+  background-color: var(--Stone-100);
+  font-family: "Outfit", sans-serif, monospace;
+}
+.content-padding {
+  padding: 0 32px;
 }
 .card {
-    width: 100%;
-    background-color: white;
+  width: 100%;
+  background-color: white;
 }
 img {
-    width: 100%;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.recipe-intro > h1 {
+  font-family: "Young-serif", serif;
+  font-size: 2.25rem;
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: 24px;
+}
+.recipe-intro > p {
+  font-size: var(--paragraph);
+  line-height: 1.5;
+  color: var(--Stone-600);
+  /* margin-bottom: 20px; */
 }
