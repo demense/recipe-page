@@ -19,3 +19,14 @@
 html, body {
     height: 100%;
 }
+body {
+    background-color: var(--Stone-100);
+    font-family: "Outfit", sans-serif, monospace;
+}
+.card {
+    width: 100%;
+    background-color: white;
+}
+img {
+    width: 100%;
+}
