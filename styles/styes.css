@@ -24,8 +24,8 @@ body {
   background-color: var(--Stone-100);
   font-family: "Outfit", sans-serif, monospace;
 }
-.content-padding {
-  padding: 0 32px;
+.content-margin {
+  margin: 0 32px;
 }
 .card {
   width: 100%;
@@ -34,6 +34,9 @@ body {
 img {
   width: 100%;
   margin-bottom: 40px;
+}
+.recipe-intro {
+  margin-bottom: 32px;
 }
 .recipe-intro > h1 {
   font-family: "Young-serif", serif;
@@ -46,5 +49,27 @@ img {
   font-size: var(--paragraph);
   line-height: 1.5;
   color: var(--Stone-600);
-  /* margin-bottom: 20px; */
+}
+.preparation {
+  background-color: var(--Rose-50);
+  padding: 18px 24px;
+  border-radius: 12px;
+}
+.preparation > p {
+  color: var(--Rose-800);
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-bottom: 11px;
+}
+.preparation > ul {
+  padding-left: 26px;
+  color: var(--Stone-600);
+
+  & li {
+    padding-left: 15px;
+    margin-top: 8px;
+  }
+  & li::marker {
+    color: var(--Rose-800);
+  }
 }
