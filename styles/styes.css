@@ -30,6 +30,7 @@ body {
 .card {
   width: 100%;
   background-color: white;
+  padding-bottom: 30px;
 }
 img {
   width: 100%;
@@ -116,4 +117,33 @@ img {
     color: var(--Brown-800);
     font-weight: 700;
   }
+}
+.nutrition > p {
+  color: var(--Stone-600);
+}
+table {
+    margin-top: 10px;
+    height: 100%;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 1px;
+    text-align: left;
+
+    & th {
+      color: var(--Stone-600);
+      font-weight: 400;
+      padding: 12px 0 12px 33px;
+    }
+    & td {
+      color: var(--Brown-800);
+      padding: 12px 0 12px 10px;
+      font-weight: 700;
+    }
+    & tr {
+      border-bottom: 1px solid #dededf;
+    }
+    & .last-row {
+      border-bottom: none;
+    }
 }
