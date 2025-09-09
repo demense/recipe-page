@@ -16,16 +16,9 @@
   --Rose-50: hsl(330, 100%, 98%);
   --paragraph: 1rem;
 }
-html,
-body {
-  height: 100%;
-}
 body {
   background-color: var(--Stone-100);
   font-family: "Outfit", sans-serif, monospace;
-}
-.content-margin {
-  margin: 0 32px;
 }
 .card {
   width: 100%;
@@ -50,6 +43,7 @@ img {
   font-size: var(--paragraph);
   line-height: 1.5;
   color: var(--Stone-600);
+  margin-bottom: 33px;
 }
 .preparation {
   background-color: var(--Rose-50);
@@ -75,13 +69,6 @@ img {
     color: var(--Rose-800);
   }
 }
-.second-heading {
-  color: var(--Brown-800);
-  font-family: "Young-serif", serif;
-  font-size: 1.75rem;
-  font-weight: 400;
-  margin-bottom: 17px;
-}
 .ingredients > ul {
   padding-left: 7px;
   color: var(--Stone-600);
@@ -100,11 +87,6 @@ img {
     color: var(--Brown-800);
   }
 }
-.separator {
-  margin-top: 30px;
-  margin-bottom: 25px;
-  border-color: hsl(30, 10%, 100%);
-}
 .instructions > ol {
   padding-left: 25px;
   color: var(--Stone-600);
@@ -122,28 +104,103 @@ img {
   color: var(--Stone-600);
 }
 table {
-    margin-top: 10px;
-    height: 100%;
-    width: 100%;
-    table-layout: fixed;
-    border-collapse: collapse;
-    border-spacing: 1px;
-    text-align: left;
+  margin-top: 10px;
+  height: 100%;
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border-spacing: 1px;
+  text-align: left;
 
-    & th {
-      color: var(--Stone-600);
-      font-weight: 400;
-      padding: 12px 0 12px 33px;
-    }
-    & td {
-      color: var(--Brown-800);
-      padding: 12px 0 12px 10px;
-      font-weight: 700;
-    }
-    & tr {
-      border-bottom: 1px solid #dededf;
-    }
-    & .last-row {
-      border-bottom: none;
-    }
+  & th {
+    color: var(--Stone-600);
+    font-weight: 400;
+    padding: 12px 0 12px 33px;
+  }
+  & td {
+    color: var(--Brown-800);
+    padding: 12px 0 12px 10px;
+    font-weight: 700;
+  }
+  & tr {
+    border-bottom: 1px solid #dededf;
+  }
+  & .last-row {
+    border-bottom: none;
+  }
 }
+/* Shared styles */
+.content-margin {
+  margin-left: 32px;
+  margin-right: 32px;
+}
+.second-heading {
+  color: var(--Brown-800);
+  font-family: "Young-serif", serif;
+  font-size: 1.75rem;
+  font-weight: 400;
+  margin-bottom: 17px;
+}
+.separator {
+  margin-top: 30px;
+  margin-bottom: 25px;
+  border-color: hsl(30, 10%, 100%);
+}
+/* -------------- */
+/* Media queries */
+@media (min-width: 768px) {
+  .content-margin {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+  }
+  .card {
+    width: 739px;
+    height: fit-content;
+    padding: 40px 40px 28px 40px;
+    border-radius: 25px;
+    margin: 122px 0;
+  }
+  img {
+    border-radius: 14px;
+  }
+  .recipe-intro > h1 {
+    font-size: 2.51rem;
+  }
+  .preparation {
+    padding: 21px 30px;
+  }
+}
+@media (min-width: 2560px) {
+  :root {
+    font-size: 30px;
+  }
+  .content-margin {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+  }
+  .card {
+    width: 1200px;
+    height: fit-content;
+    padding: 60px 80px 40px 80px;
+    border-radius: 32px;
+    margin: 160px 0;
+  }
+  img {
+    border-radius: 20px;
+  }
+  .recipe-intro > h1 {
+    font-size: 2.5rem;
+  }
+  .preparation {
+    padding: 32px 48px;
+  }
+}
+/* ------------ */
